@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+   cout << "The prime numbers between 10 and 20 are:" << endl;
+    int n = 200;
+    for (float m = 0; m < n; ++m)
+    {
+        int s = m - 1;
+        for (float counter = 2; counter < m; ++counter)
+        {
+            //cout << "trial " << counter - 1 << endl;
+            float p = m/counter;
+            int q = p;
+            float r = p - q;
+            //cout << "r is " << r << endl;
+            if( counter == s && r > 0)
+                cout << m << ", "; //<< " is a prime number,\n";
+            else if (r == 0)
+                {
+                    //cout << m << " is not a prime number \n";
+                    break;
+                }
+            /*else if (r == 0)
+            {
+              cout << m;
+              //break;
+            }
+            cout << endl;*/
+        }
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
+
